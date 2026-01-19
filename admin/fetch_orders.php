@@ -9,12 +9,12 @@ $res = mysqli_query($conn, $sql);
 <div class="animate-fadeIn text-white p-2">
     <div class="flex justify-between items-center mb-8">
         <div>
-            <h2 class="text-2xl font-black uppercase tracking-tight border-l-4 border-[#E11D48] pl-4">
-                USER <span class="text-[#E11D48]">MANAGEMENT</span>
+            <h2 class="text-2xl font-black uppercase tracking-tight border-l-4 border-[#FACC15] pl-4">
+                USER <span class="text-[#FACC15]">MANAGEMENT</span>
             </h2>
             <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] mt-1">Staff & Customer Directory</p>
         </div>
-        <button onclick="loadSection('add_user')" class="bg-[#E11D48] hover:bg-[#be123c] text-white px-5 py-2.5 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all shadow-lg shadow-rose-600/20">
+        <button onclick="loadSection('add_user')" class="bg-[#FACC15] hover:bg-[#B59F3B] text-white px-5 py-2.5 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all shadow-lg shadow-rose-600/20">
             + Add New User
         </button>
     </div>
@@ -34,7 +34,7 @@ $res = mysqli_query($conn, $sql);
                 <?php if(mysqli_num_rows($res) > 0): ?>
                     <?php while($u = mysqli_fetch_assoc($res)): ?>
                     <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors group">
-                        <td class="p-5 font-mono text-xs text-gray-500 group-hover:text-[#E11D48]">
+                        <td class="p-5 font-mono text-xs text-gray-500 group-hover:text-[#FACC15]">
                             #USR-<?php echo str_pad($u['id'], 3, '0', STR_PAD_LEFT); ?>
                         </td>
                         <td class="p-5 font-bold tracking-tight text-gray-200">
@@ -45,7 +45,7 @@ $res = mysqli_query($conn, $sql);
                         </td>
                         <td class="p-5 text-center">
                             <?php if($u['role'] == 'admin'): ?>
-                                <span class="bg-[#E11D48] text-white px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest">
+                                <span class="bg-[#FACC15] text-white px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest">
                                     Admin
                                 </span>
                             <?php else: ?>
@@ -59,7 +59,7 @@ $res = mysqli_query($conn, $sql);
                                 <button onclick="loadSection('edit_user&id=<?php echo $u['id']; ?>')" class="p-2 bg-white/5 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all">
                                     <i class="fa fa-edit text-xs"></i>
                                 </button>
-                                <button onclick="confirmDeleteUser(<?php echo $u['id']; ?>)" class="p-2 bg-rose-600/10 text-[#E11D48] rounded-lg hover:bg-[#E11D48] hover:text-white transition-all">
+                                <button onclick="confirmDeleteUser(<?php echo $u['id']; ?>)" class="p-2 bg-rose-600/10 text-[#FACC15] rounded-lg hover:bg-[#FACC15] hover:text-white transition-all">
                                     <i class="fa fa-trash text-xs"></i>
                                 </button>
                             </div>

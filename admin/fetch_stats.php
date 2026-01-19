@@ -10,7 +10,7 @@ $total_revenue = $res_o['r'] ?? 0;
 ?>
 
 <div class="animate-fadeIn">
-    <h2 class="text-2xl font-black mb-8 italic uppercase border-l-4 border-[#F97316] pl-4 text-blue-400">System <span class="text-[#F97316]">Overview</span></h2>
+    <h2 class="text-2xl font-black mb-8 italic uppercase border-l-4 border-[#FACC15] pl-4 text-white">System <span class="text-[#FACC15]">Overview</span></h2>
     
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div  onclick="loadSection('movies', this)" class="bg-[#111827] p-6 rounded-3xl border border-white/5 relative overflow-hidden cursor-pointer">

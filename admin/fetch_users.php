@@ -8,8 +8,8 @@ $res = mysqli_query($conn, "SELECT * FROM users WHERE role = 'customer' ORDER BY
 <div class="animate-fadeIn p-2">
     <div class="flex justify-between items-center mb-8">
         <div>
-            <h2 class="text-2xl font-black uppercase tracking-tight border-l-4 border-[#E11D48] pl-4 text-white">
-                CUSTOMER <span class="text-[#E11D48]">DATABASE</span>
+            <h2 class="text-2xl font-black uppercase tracking-tight border-l-4 border-[#FACC15] pl-4 text-white">
+                CUSTOMER <span class="text-[#FACC15]">DATABASE</span>
             </h2>
             <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] mt-1">Legend Membership Records</p>
         </div>
@@ -33,7 +33,7 @@ $res = mysqli_query($conn, "SELECT * FROM users WHERE role = 'customer' ORDER BY
                 <?php if(mysqli_num_rows($res) > 0): ?>
                     <?php while($u = mysqli_fetch_assoc($res)): ?>
                     <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors group">
-                        <td class="p-6 font-mono text-xs text-gray-500 group-hover:text-[#E11D48] transition-colors">
+                        <td class="p-6 font-mono text-xs text-gray-500 group-hover:text-[#FACC15] transition-colors">
                             #LGD-<?php echo str_pad($u['id'], 4, '0', STR_PAD_LEFT); ?>
                         </td>
                         <td class="p-6 font-bold tracking-tight text-gray-200">
@@ -43,13 +43,13 @@ $res = mysqli_query($conn, "SELECT * FROM users WHERE role = 'customer' ORDER BY
                             <?php echo htmlspecialchars($u['email']); ?>
                         </td>
                         <td class="p-6 text-center">
-                            <span class="bg-[#E11D48]/10 text-[#E11D48] px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-[#E11D48]/20">
+                            <span class="bg-[#FACC15]/10 text-[#FACC15] px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-[#FACC15]/20">
                                 <?php echo $u['role']; ?>
                             </span>
                         </td>
                         <td class="p-6 text-center">
                             <button onclick="loadSection('user_details&id=<?php echo $u['id']; ?>')" 
-                                    class="bg-white/5 hover:bg-[#E11D48] hover:text-white px-4 py-2 rounded-lg text-[10px] font-black uppercase transition-all duration-300 text-gray-400 border border-white/5">
+                                    class="bg-white/5 hover:bg-[#FACC15] hover:text-white px-4 py-2 rounded-lg text-[10px] font-black uppercase transition-all duration-300 text-gray-400 border border-white/5">
                                 View Profile
                             </button>
                         </td>

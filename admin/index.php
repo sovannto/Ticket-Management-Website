@@ -14,7 +14,7 @@ session_start();
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
       
       :root {
-        --legend-red: #E11D48; /* Crimson Red */
+        --legend-red: #FACC15; /* Crimson Red */
         --legend-dark: #050505; /* Deep Black */
         --legend-gray: #121212; /* Sidebar Black */
         --legend-gold: #C5A059; /* Premium Gold */
@@ -28,7 +28,7 @@ session_start();
 
       /* Legend Sidebar Styling */
       .sidebar-item.active {
-        background: linear-gradient(90deg, var(--legend-red) 0%, #9f1239 100%);
+        background: linear-gradient(90deg, var(--legend-red) 0%, #B59F3B 100%);
         color: white;
         box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
       }

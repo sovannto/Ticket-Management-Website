@@ -2,7 +2,6 @@
 include '../includes/db.php';
 include '../includes/header.php';
 
-// មុខងារបន្ថែម Category
 if(isset($_POST['add_cat'])){
     $name = mysqli_real_escape_string($conn, $_POST['cat_name']);
     mysqli_query($conn, "INSERT INTO categories (name) VALUES ('$name')");

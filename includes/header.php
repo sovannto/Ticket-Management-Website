@@ -30,26 +30,26 @@ $auth_id = isset($_SESSION['user_id']) ? intval($_SESSION['user_id']) : 0;
     >
       <a
         href="index.php"
-        class="text-2xl font-black italic tracking-tighter text-[#F97316]"
+        class="text-2xl font-black italic tracking-tighter text-[#FACC15]"
         >Movie<span class="text-white" >Nest</span></a
       >
 
       <nav class="flex items-center gap-6 text-sm font-bold uppercase">
-        <a href="index.php" class="hover:text-[#F97316]">Home</a>
-        <a href="movies.php" class="hover:text-[#F97316]">Movies</a>
+        <a href="index.php" class="hover:text-[#FACC15]">Home</a>
+        <a href="movies.php" class="hover:text-[#FACC15]">Movies</a>
 
         <?php if(isset($_SESSION['user_id'])): ?>
         <a href="my-library.php">My Library</a>
         <a
           href="logout.php"
-          class="bg-white/5 px-4 py-2 rounded-lg text-[#F97316]"
+          class="bg-white/5 px-4 py-2 rounded-lg text-[#FACC15]"
           >Logout</a
         >
         <?php else: ?>
         <a href="login.php" class="text-gray-400 hover:text-white">Login</a>
         <a
           href="register.php"
-          class="bg-[#F97316] px-5 py-2 rounded-xl text-white shadow-lg shadow-red-600/20 hover:bg-orange-400 transition"
+          class="bg-[#FACC15] px-5 py-2 rounded-xl text-white shadow-lg shadow-red-600/20 hover:bg-orange-400 transition"
           >Register</a
         >
         <?php endif; ?>

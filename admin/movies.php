@@ -7,12 +7,12 @@ include '../includes/db.php';
     <div class="flex justify-between items-center mb-10">
         <div>
             <h2 class="text-3xl font-black tracking-tight text-white">
-                MOVIE <span class="text-[#E11D48]">LIBRARY</span>
+                MOVIE <span class="text-[#FACC15]">LIBRARY</span>
             </h2>
             <p class="text-gray-500 text-xs mt-1 uppercase tracking-[0.2em]">Legend Cinema Management</p>
         </div>
         <button onclick="loadSection('add_movie', this)" 
-                class="bg-[#E11D48] hover:bg-[#be123c] text-white px-6 py-3 rounded-xl font-bold uppercase text-xs tracking-widest transition-all duration-300 shadow-lg shadow-rose-600/20">
+                class="bg-[#FACC15] hover:bg-[#B59F3B] text-white px-6 py-3 rounded-xl font-bold uppercase text-xs tracking-widest transition-all duration-300 shadow-lg shadow-rose-600/20">
             <i class="fa fa-plus mr-2"></i> Add New Movie
         </button>
     </div>
@@ -26,13 +26,13 @@ include '../includes/db.php';
         if(mysqli_num_rows($result) > 0):
             while($m = mysqli_fetch_assoc($result)): 
         ?>
-        <div class="bg-[#121212] rounded-2xl border border-white/5 overflow-hidden group hover:border-[#E11D48]/50 transition-all duration-500 shadow-2xl">
+        <div class="bg-[#121212] rounded-2xl border border-white/5 overflow-hidden group hover:border-[#FACC15]/50 transition-all duration-500 shadow-2xl">
             <div class="relative aspect-[2/3] overflow-hidden">
                 <img src="../assets/<?php echo $m['poster']; ?>" 
                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                      alt="<?php echo htmlspecialchars($m['title']); ?>">
                 
-                <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#E11D48] text-[10px] font-black px-3 py-1 rounded-full border border-white/10">
+                <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#FACC15] text-[10px] font-black px-3 py-1 rounded-full border border-white/10">
                     <?php echo $m['duration']; ?> MINS
                 </div>
             </div>
@@ -53,7 +53,7 @@ include '../includes/db.php';
                             <i class="fa fa-edit"></i>
                         </button>
                         <button onclick="confirmDelete(<?php echo $m['id']; ?>)" 
-                                class="p-2.5 bg-rose-600/10 text-[#E11D48] rounded-lg hover:bg-[#E11D48] hover:text-white transition-all">
+                                class="p-2.5 bg-rose-600/10 text-[#FACC15] rounded-lg hover:bg-[#FACC15] hover:text-white transition-all">
                             <i class="fa fa-trash"></i>
                         </button>
                     </div>
