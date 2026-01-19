@@ -7,46 +7,46 @@ session_start();
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legend Cinema | Admin Dashboard</title>
+    <title>Prasat Cinema | Admin Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
       
       :root {
-        --legend-red: #FACC15; /* Crimson Red */
-        --legend-dark: #050505; /* Deep Black */
-        --legend-gray: #121212; /* Sidebar Black */
-        --legend-gold: #C5A059; /* Premium Gold */
+        --Prasat-red: #FACC15; /* Crimson Red */
+        --Prasat-dark: #050505; /* Deep Black */
+        --Prasat-gray: #121212; /* Sidebar Black */
+        --Prasat-gold: #C5A059; /* Premium Gold */
       }
 
       body {
         font-family: "Inter", sans-serif;
-        background-color: var(--legend-dark);
+        background-color: var(--Prasat-dark);
         color: white;
       }
 
-      /* Legend Sidebar Styling */
+      /* Prasat Sidebar Styling */
       .sidebar-item.active {
-        background: linear-gradient(90deg, var(--legend-red) 0%, #B59F3B 100%);
+        background: linear-gradient(90deg, var(--Prasat-red) 0%, #B59F3B 100%);
         color: white;
         box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
       }
 
       .sidebar-item:hover:not(.active) {
         background-color: rgba(255, 255, 255, 0.05);
-        color: var(--legend-red);
+        color: var(--Prasat-red);
       }
 
-      /* Custom Scrollbar for Legend Look */
+      /* Custom Scrollbar for Prasat Look */
       ::-webkit-scrollbar { width: 6px; }
-      ::-webkit-scrollbar-track { background: var(--legend-dark); }
+      ::-webkit-scrollbar-track { background: var(--Prasat-dark); }
       ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
-      ::-webkit-scrollbar-thumb:hover { background: var(--legend-red); }
+      ::-webkit-scrollbar-thumb:hover { background: var(--Prasat-red); }
 
       /* Loading Animation */
       .loader {
-        border-top-color: var(--legend-red);
+        border-top-color: var(--Prasat-red);
       }
     </style>
   </head>
@@ -54,7 +54,7 @@ session_start();
     
     <aside class="w-64 bg-[#0a0a0a] border-r border-white/5 flex flex-col p-6">
       <div class="flex flex-col items-center mb-10">
-        <img class="w-24 h-24 object-contain" src="../assets/Logo.png" alt="Legend Cinema" />   
+        <img class="w-24 h-24 object-contain" src="../assets/Logo.png" alt="Prasat Cinema" />   
       </div>
 
       <nav class="flex-1 space-y-3">
@@ -89,7 +89,7 @@ session_start();
     <main class="flex-1 flex flex-col bg-[#050505]">
       <header class="h-20 border-b border-white/5 flex items-center justify-between px-10 bg-[#0a0a0a]/80 backdrop-blur-md">
         <h2 id="page-title" class="text-xs font-bold uppercase tracking-widest text-gray-400">
-          Legend / <span class="text-white">Dashboard</span>
+          Prasat / <span class="text-white">Dashboard</span>
         </h2>
         
         <div class="flex items-center gap-4">
@@ -105,7 +105,7 @@ session_start();
     </main>
 
     <script>
-      // The logic remains the same, but we update the spinner color to Legend Red
+      // The logic remains the same, but we update the spinner color to Prasat Red
       function loadSection(section, btn) {
         var container = document.getElementById("main-content");
         var title = document.getElementById("page-title");
@@ -113,7 +113,7 @@ session_start();
         container.innerHTML = `
           <div class="flex flex-col justify-center items-center h-full space-y-4">
             <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-rose-600"></div>
-            <span class="text-xs text-gray-500 font-bold tracking-widest">LOADING LEGEND DATA</span>
+            <span class="text-xs text-gray-500 font-bold tracking-widest">LOADING Prasat DATA</span>
           </div>`;
 
         var url = section.includes("&id=") ? "fetch_" + section.replace("&", ".php?") : "fetch_" + section + ".php";
@@ -125,7 +125,7 @@ session_start();
         if (btn) btn.classList.add("active", "text-white");
 
         var displayTitle = section.split("&")[0];
-        title.innerHTML = `Legend / <span class="text-white">${displayTitle.toUpperCase()}</span>`;
+        title.innerHTML = `Prasat / <span class="text-white">${displayTitle.toUpperCase()}</span>`;
 
         fetch(url)
           .then(res => { if (!res.ok) throw new Error("File not found: " + url); return res.text(); })

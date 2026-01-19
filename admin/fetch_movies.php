@@ -77,7 +77,7 @@ $res = mysqli_query($conn, $sql);
         <?php else: ?>
             <div class="col-span-full bg-[#0a0a0a] border border-dashed border-white/10 rounded-[2rem] py-20 text-center">
                 <i class="fa fa-film text-5xl text-gray-800 mb-4 block"></i>
-                <p class="text-gray-500 font-bold uppercase tracking-[0.2em]">No movies found in legend database</p>
+                <p class="text-gray-500 font-bold uppercase tracking-[0.2em]">No movies found in Prasat database</p>
             </div>
         <?php endif; ?>
     </div>

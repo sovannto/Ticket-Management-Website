@@ -11,7 +11,7 @@ $res = mysqli_query($conn, "SELECT * FROM users WHERE role = 'customer' ORDER BY
             <h2 class="text-2xl font-black uppercase tracking-tight border-l-4 border-[#FACC15] pl-4 text-white">
                 CUSTOMER <span class="text-[#FACC15]">DATABASE</span>
             </h2>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] mt-1">Legend Membership Records</p>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] mt-1">Prasat Membership Records</p>
         </div>
         <div class="bg-[#121212] border border-white/5 px-4 py-2 rounded-xl text-xs font-bold text-gray-400">
             Total Customers: <?php echo mysqli_num_rows($res); ?>

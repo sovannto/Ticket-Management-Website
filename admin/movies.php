@@ -9,7 +9,7 @@ include '../includes/db.php';
             <h2 class="text-3xl font-black tracking-tight text-white">
                 MOVIE <span class="text-[#FACC15]">LIBRARY</span>
             </h2>
-            <p class="text-gray-500 text-xs mt-1 uppercase tracking-[0.2em]">Legend Cinema Management</p>
+            <p class="text-gray-500 text-xs mt-1 uppercase tracking-[0.2em]">Prasat Cinema Management</p>
         </div>
         <button onclick="loadSection('add_movie', this)" 
                 class="bg-[#FACC15] hover:bg-[#B59F3B] text-white px-6 py-3 rounded-xl font-bold uppercase text-xs tracking-widest transition-all duration-300 shadow-lg shadow-rose-600/20">

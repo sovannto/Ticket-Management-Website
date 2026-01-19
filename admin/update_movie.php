@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $img_name = $_FILES['movie_image']['name'];
         $tmp_name = $_FILES['movie_image']['tmp_name'];
         
-        // Use a clean naming convention for Legend Cinema
+        // Use a clean naming convention for Prasat Cinema
         $extension = pathinfo($img_name, PATHINFO_EXTENSION);
-        $new_img_name = "legend_" . time() . "." . $extension;
+        $new_img_name = "Prasat_" . time() . "." . $extension;
         
         // Move to the correct folder (assets/)
         if (move_uploaded_file($tmp_name, "../assets/" . $new_img_name)) {
