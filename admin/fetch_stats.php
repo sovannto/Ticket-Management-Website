@@ -1,10 +1,10 @@
 <?php 
 include '../includes/db.php';
 
-// ទាញទិន្នន័យពី DB
+
 $total_movies = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as t FROM movies"))['t'] ?? 0;
 $total_users = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as t FROM users WHERE role = 'user'"))['t'] ?? 0;
-$res_o = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as t, SUM(price_paid) as r FROM purchases"));
+// $res_o = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as t, SUM(price_paid) as r FROM purchases"));
 $total_orders = $res_o['t'] ?? 0;
 $total_revenue = $res_o['r'] ?? 0;
 ?>
