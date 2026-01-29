@@ -31,7 +31,7 @@ $auth_id = isset($_SESSION['user_id']) ? intval($_SESSION['user_id']) : 0;
       <a
         href="index.php"
         class="text-2xl font-black italic tracking-tighter text-[#FACC15]"
-        >Movie<span class="text-white" >Nest</span></a
+        >PRASAT<span class="text-white" >CINEMA</span></a
       >
 
       <nav class="flex items-center gap-6 text-sm font-bold uppercase">
@@ -69,7 +69,7 @@ $auth_id = isset($_SESSION['user_id']) ? intval($_SESSION['user_id']) : 0;
               window.location.href = "../public/login.php";
             } else {
               location.reload();
-            } // Update ប៊ូតុងភ្លាមៗ
+            } 
           });
       }
     </script>
