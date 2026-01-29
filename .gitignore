@@ -19,9 +19,10 @@ build/
 Tailwind CSS Generated Output
 assets/output.css
 
+
 ------------------------------------
 OS & Editor Files
-------------------------------------
+-------------------     -----------------
 .DS_Store # Mac operating system files
 Thumbs.db # Windows thumbnail caches
 .idea/    # JetBrains IDEs (e.g., WebStorm, IntelliJ)

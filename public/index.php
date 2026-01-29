@@ -64,7 +64,7 @@ $uid = $_SESSION['user_id'] ?? 0;
                     <?php if($is_bought): ?>
                         <a href="watch.php?id=<?php echo $mid; ?>" class="bg-green-500 hover:bg-green-600 w-full py-3 rounded-xl text-center text-xs font-black transition-colors">WATCH NOW</a>
                     <?php else: ?>
-                        <a href="detail.php?id=<?php echo $mid; ?>" class="bg-[#FACC15] hover:bg-white text-black w-full py-3 rounded-xl text-center text-xs font-black transition-colors shadow-lg shadow-[#FACC15]/20">BUY $<?php echo $m['price']; ?></a>
+                        <a href="detail.php?id=<?php echo $mid; ?>" class="bg-[#FACC15] hover:bg-white text-black w-full py-3 rounded-xl text-center text-xs font-black transition-colors shadow-lg shadow-[#FACC15]/20">BUY </a>
                     <?php endif; ?>
                 </div>
             </div>
