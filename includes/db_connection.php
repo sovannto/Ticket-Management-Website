@@ -12,6 +12,4 @@ if ($conn->connect_error) {
     // If connection fails, stop everything and show the error
     die("Connection failed: " . $conn->connect_error);
 }
-
-echo "Connected successfully";
 ?>
