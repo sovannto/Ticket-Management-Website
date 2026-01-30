@@ -4,6 +4,6 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+    "dev": "node init && npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   }
 }

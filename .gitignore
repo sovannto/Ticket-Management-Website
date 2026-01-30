@@ -26,4 +26,4 @@ OS & Editor Files
 .DS_Store # Mac operating system files
 Thumbs.db # Windows thumbnail caches
 .idea/    # JetBrains IDEs (e.g., WebStorm, IntelliJ)
-.vscode/  # VSCode settings (only ignore if they are user-specific, otherwise keep settings.json)
+config.bat
